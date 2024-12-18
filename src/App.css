@@ -1,0 +1,48 @@
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  --base-color: white;
+  --base-variant: #a3a7b6;
+  --text-color: #111528;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+.dark {
+  --base-color: black;
+  --base-variant: #252b25;
+  --text-color: #e8e9ed;
+  --primary-color: #444e69;
+  --accent-color: #0155bb;
+}
+
+body {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+}
+
+#theme-switch{
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+#theme-switch:hover {
+  color: var(--accent-color);
+  background-color: var(--text-color);
+}
+
+
+
